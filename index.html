@@ -11,7 +11,7 @@
   <canvas id="scene"></canvas>
   <header class="nav"><span class="logo">SCAN<b>DRIVEN</b></span><a href="#book" class="btn">Book a scan</a></header>
   <main>
-    <section class="panel hero"><h1>Your car,<br/>captured in<br/><em>micron detail.</em></h1><p>Precision 3D scanning that turns real parts into manufacturer-ready STL files.</p></section>
+    <section class="panel hero"><span class="loc-badge"><span class="dot"></span>Austin, TX</span><h1>Your car,<br/>captured in<br/><em>micron detail.</em></h1><p>Precision 3D scanning that turns real parts into manufacturer-ready STL files.</p></section>
     <section class="panel">
       <span class="kicker">01 Scan</span>
       <h2>Captured to 0.02&nbsp;mm.</h2>
@@ -29,8 +29,33 @@
       <p>You get a ready-to-use .STL file that opens in the CAD software your designer or manufacturer already uses. They can start designing parts, kits and accessories around your car straight away.</p>
       <ul class="chips"><li>Autodesk Fusion</li><li>SolidWorks</li><li>Autodesk Inventor</li><li>Siemens NX</li><li>CATIA</li><li>Onshape</li><li>Rhino</li><li>Blender</li></ul>
     </section>
+    <section class="panel" id="location">
+      <span class="kicker">04 Where we scan</span>
+      <h2>Scanned in Austin, TX.</h2>
+      <div class="loc-grid">
+        <div class="radar" aria-hidden="true">
+          <svg viewBox="0 0 300 300">
+            <defs>
+              <radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#00e5ff" stop-opacity=".18"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+              <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset="1" stop-color="#00e5ff" stop-opacity=".55"/></linearGradient>
+            </defs>
+            <circle cx="150" cy="150" r="145" fill="url(#rg)"/>
+            <g fill="none" stroke="#00e5ff" stroke-opacity=".25"><circle cx="150" cy="150" r="40"/><circle cx="150" cy="150" r="80"/><circle cx="150" cy="150" r="120" stroke-dasharray="4 6"/><line x1="150" y1="5" x2="150" y2="295"/><line x1="5" y1="150" x2="295" y2="150"/></g>
+            <g class="radar-sweep"><path d="M150 150 L150 30 A120 120 0 0 1 254 90 Z" fill="url(#sweep)"/></g>
+            <circle class="ping" cx="150" cy="150" r="8" fill="none" stroke="#00e5ff"/>
+            <circle cx="150" cy="150" r="6" fill="#00e5ff"/>
+            <text x="150" y="178" text-anchor="middle" fill="#e8eef5" font-size="13" font-weight="600" letter-spacing="2">AUSTIN, TX</text>
+            <text x="150" y="268" text-anchor="middle" fill="#7a8794" font-size="10" letter-spacing="1.5">MOBILE SCAN RANGE</text>
+          </svg>
+        </div>
+        <div class="loc-cards">
+          <div class="loc-card"><b>Bring it to us</b><p>Drive your car to our Austin location and we scan it on site. This is our standard service.</p></div>
+          <div class="loc-card"><b>We come to you <span class="tag">+ travel fee</span></b><p>Can't bring it in? If you're within a reasonable drive of Austin, we can bring the scanner to you for an extra charge. Ask about it on your booking call.</p></div>
+        </div>
+      </div>
+    </section>
     <section class="panel" id="book">
-      <span class="kicker">04 Book</span>
+      <span class="kicker">05 Book</span>
       <h2>Book your scan.</h2>
       <p>Pick a time for a free 15-minute call. Tell us about your car and what you want to build, and we'll call you to plan the scan.</p>
       <div class="booking">
