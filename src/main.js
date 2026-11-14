@@ -3,6 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './gallery.js';
 gsap.registerPlugin(ScrollTrigger);
 
 const canvas = document.getElementById('scene');
@@ -87,7 +88,7 @@ function onCarLoaded(gltf) {
     if (/tires/.test(mn)) { m.color?.set(0x0d0d0d); m.roughness = 0.9; m.metalness = 0; }
     if (/metal_gray/.test(mn)) { m.color?.set(0x9aa3ad); m.metalness = 1; m.roughness = 0.3; }
     if (/carbon/.test(mn)) m.color?.set(0x1c1f22);
-    if (/glass|window/.test(mn + ' ' + o.name.toLowerCase()) && !/red/.test(mn)) { m.map = null; m.color?.set(0x05070a); m.transparent = true; m.opacity = 0.92; m.metalness = 0.3; m.roughness = 0.05; m.needsUpdate = true; } // dark tinted glass / roof
+    if (/glass|window/.test(mn + ' ' + o.name.toLowerCase()) && !/red/.test(mn)) { m.map = null; m.color?.set(0x05070a); m.transparent = true; m.opacity = 0.92; m.metalness = 0.3; m.roughness = 0.05; m.needsUpdate = true; o.renderOrder = 2; } // dark tinted glass / roof. Drawn after the see-through interior so the interior never pokes through the glass roof
     o.material.clippingPlanes = [revealPlane];
   });
   // Auto-fit any car model: length along x, 4.5 units long, centred, wheels on the ground
