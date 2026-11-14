@@ -3,7 +3,8 @@
 html,body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif}
 #scene{position:fixed;inset:0;width:100vw;height:100vh;z-index:0}
 .nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;z-index:2}
-.logo{letter-spacing:.2em;font-weight:300}.logo b{color:var(--accent);font-weight:800}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}.logo-mark{height:34px;width:auto;filter:drop-shadow(0 0 8px rgba(0,229,255,.35))}.logo-word{height:16px;width:auto}
+@media (max-width:480px){.logo-mark{height:28px}.logo-word{height:13px}}
 .btn{border:1px solid var(--accent);color:var(--accent);padding:10px 18px;border-radius:999px;text-decoration:none}
 main{position:relative;z-index:1}
 .panel{min-height:62vh;display:flex;flex-direction:column;justify-content:center;padding:6vh 5vw;max-width:640px}
