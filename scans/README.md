@@ -1,6 +1,6 @@
 # Scan gallery photos
 
-Every picture in this folder shows up in the "Some of my work" section of the website. No code changes needed.
+Every picture in this folder shows up in the "Some of our work" section of the website. No code changes needed.
 
 ## Add a photo
 1. On GitHub, open this `scans` folder and click **Add file → Upload files**.
@@ -10,10 +10,10 @@ Every picture in this folder shows up in the "Some of my work" section of the we
 ## Name the file = the caption
 The file name becomes the caption under the photo.
 
-- `Mustang door panel.jpg` shows as **Mustang door panel**
-- `07-GT-R front bumper.jpg` shows as **GT-R front bumper**
+- `07-Mustang-door-panel.jpg` shows as **Mustang door panel**
+- `08-GT-R_front_bumper.jpg` shows as **GT-R front bumper**
 
-A number at the start (`01-`, `02-`, ...) only sets the order and is not shown. Underscores turn into spaces. If the name has no spaces at all, dashes turn into spaces too (`mustang-door-panel.jpg` shows as **Mustang door panel**), otherwise dashes are kept so names like GT-R stay intact.
+A number at the start (`01-`, `02-`, ...) only sets the order and is not shown. Dashes and underscores turn into spaces. To keep a dash (like GT-R), separate the words with underscores instead. Avoid spaces, commas and other symbols in file names, since they can break the link to the picture.
 
 ## Tips
 - Use JPG, PNG or WEBP. iPhone HEIC photos don't show in most browsers, so export them as JPG first.

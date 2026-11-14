@@ -6,7 +6,7 @@ Single-page site for scandriven.com: a 3D scroll animation of a car being laser-
 - `npm run build` outputs the static site to `dist/`
 - Netlify builds and deploys automatically from `main` (see `netlify.toml`)
 
-## Scan gallery ("Some of my work")
+## Scan gallery ("Some of our work")
 Drop images into the `scans/` folder and they appear on the site automatically. The file name is the caption. See `scans/README.md`.
 
 ## Credits

@@ -1,4 +1,4 @@
-// "Some of my work" gallery.
+// "Some of our work" gallery.
 // Every image in the /scans folder is picked up automatically at build time.
 // The file name becomes the caption: "02-Mustang door panel.jpg" -> "Mustang door panel".
 // A number at the start (01-, 02-, ...) only sets the order and is not shown.
