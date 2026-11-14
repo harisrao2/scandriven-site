@@ -37,7 +37,8 @@ function build() {
     card.setAttribute('aria-label', `Enlarge${item.caption ? `: ${item.caption}` : ' image'}`);
     card.innerHTML = `
       <span class="work-media">
-        <img src="${item.src}" alt="${escapeAttr(item.caption)}" loading="lazy" decoding="async" />
+        <img class="work-bg" src="${item.src}" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+        <img class="work-img" src="${item.src}" alt="${escapeAttr(item.caption)}" loading="lazy" decoding="async" />
         <span class="work-scanline" aria-hidden="true"></span>
         <span class="work-glare" aria-hidden="true"></span>
         <span class="work-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
